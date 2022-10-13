@@ -8,7 +8,7 @@ public class Human {
     protected int age;
 
     public Human() {
-        System.out.println("Human default Constructor");       // debug
+       // System.out.println("Human default Constructor");       // debug
 
     }
 
