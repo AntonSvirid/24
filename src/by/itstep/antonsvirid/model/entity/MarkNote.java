@@ -5,7 +5,7 @@ public class MarkNote {
 
     private double mark;
 
-    public MarkNote() {
+    public MarkNote() {     // конструктор по умолчанию
         mark = MIN_MARK;
     }
 

@@ -18,6 +18,11 @@ public class Student extends Human {    // extends - наследование с
         this.mark = mark;
     }
 
+    public Student(String name, int age, MarkNote note) {
+        super(name, age);
+        this.note = note;
+    }
+
     public double getMark() {
         return note.getMark();
     }
@@ -31,7 +36,13 @@ public class Student extends Human {    // extends - наследование с
         return super.getInfo() + ", mark = " + mark;
     }
 
+    public MarkNote getNote() {     // геттер и сеттер для зачетки при агрегации
+        return note;
+    }
 
+    public void setNote(MarkNote note) {
+        this.note = note;
+    }
 }
 
 
