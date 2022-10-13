@@ -5,10 +5,12 @@ public class Student extends Human {    // extends - наследование с
     public static final int MAX_MARK = 10;
 
     private double mark;
+    private MarkNote note;      // подключение зачётки к студенту
 
     public Student() {
-     // super();        // в байткоде так вызывается дефолтный конструктор баз класса
-    //    System.out.println("Student default Constructor");       // debug
+        // super();        // в байткоде так вызывается дефолтный конструктор баз класса
+        //    System.out.println("Student default Constructor");       // debug
+        note = new MarkNote();
     }
 
     public Student(String name, int age, double mark) {
@@ -17,7 +19,7 @@ public class Student extends Human {    // extends - наследование с
     }
 
     public double getMark() {
-        return mark;
+        return note.getMark();
     }
 
     public void setMark(double mark) {

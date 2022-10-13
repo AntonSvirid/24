@@ -5,7 +5,7 @@ public class Human {
     public static final int MIN_AGE = 0;
 
     protected String name;        // private - обеспечивает инкапсуляцию
-    protected int age;
+    protected int age;          // protected  - обеспечивает ...
 
     public Human() {
        // System.out.println("Human default Constructor");       // debug
